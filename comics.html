@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Comics</title>
+</head>
+<body>
+	{{ with .Nav }}
+	<a href="{{.Prev}}">Prev</a>&nbsp;<a href="{{.Next}}">Next</a>
+	{{ end }}
+	<br>
+	{{range .Comics}}
+	<img src="{{.Image}}" title="{{.Title}}">
+	<br />
+	{{end}}
+</body>
+</html>
